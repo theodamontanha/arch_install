@@ -10,7 +10,7 @@ systemctl start ssh.service
 systemctl enable ssh.service
 pacman -Syy --noconfirm
 pacman --noconfirm -S networkmanager network-manager-applet xorg-server xorg-xinit lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings i3-gaps i3status i3lock dmenu xfce4 alacritty nautilus chromium samba ntfs-3g
-pacman --noconfirm -S vim nano dialog wireless_tools efibootmgr grub os-prober net-tools git go
+pacman --noconfirm -S arch-install-scripts vim nano mc dialog wireless_tools efibootmgr grub os-prober net-tools git go
 sleep 5
 echo "Confira instalação do GRUB! "
 grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=grub
